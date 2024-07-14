@@ -1,0 +1,136 @@
+
+footer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer-content {
+  height: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Ensure it spans the full width */
+   /* Set a higher value to ensure it stays on top */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.267);
+  line-height: 30px;
+}
+.footer-content .footer-section-about{
+  background-color: rgba(2, 205, 246, 0.474);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 10px 20px;
+  margin-top: 11px;
+}
+.footer-section-about h3{
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+}
+.footer-section-about h4{
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+}
+.footer-section-about p{
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+}
+.footer-content .footer-section-links{
+  background-color: rgba(2, 205, 246, 0.474);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px 20px;
+}
+.footer-content .footer-section-links h3{
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+}
+.footer-content .footer-section-links nav ul{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: 'Times New Roman', Times, serif;
+}
+.footer-content .footer-section-links nav ul a{
+  color: #fff;
+  font-size: 15px;
+}
+.footer-content .footer-section-contact{
+  background-color: rgba(2, 205, 246, 0.474);
+  padding: 10px 20px;
+  line-height: 35px;
+  justify-content: flex-start;
+}
+.footer-content .footer-section-contact h3{
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+}
+.customer-service{
+background-color: rgba(2, 205, 246, 0.474);
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 10px 20px;
+}
+.customer-service h3{
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+}
+.customer-service .contact-details{
+ display: flex;
+ justify-content: space-around;
+}
+.customer-service .contact-details img{
+  border: 1px solid #fff;
+  padding: 2px 3px;
+  border-radius: 5px;
+}
+.customer-service .contact-details p{
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  padding:10px 10px ;
+}
+.contact-details p a{
+  color: #fff;
+  margin-top:10px 5px;
+
+}
+.contact-details p a:hover{
+  width: 30px;
+}
+.contact-details p a .icon{
+  font-size: 20px;
+
+}
+.footer-section-contact div{
+  display: flex;
+  justify-content: space-around;
+
+}
+.footer-section-contact div span{
+  color: #fff;
+}
+.footer-section-contact div span .icon{
+  font-size: 25px;
+  border: 1px solid #fff;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+  .footer-bottom{
+    text-align: center;
+    padding: 10px 20px;
+    height: 120px;
+  background-color: rgba(2, 205, 246, 0.474);
+   
+  }
+   hr{
+    border: 1px solid #fff;
+  }
+  .footer-bottom p{
+    margin-top: 5px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+  }

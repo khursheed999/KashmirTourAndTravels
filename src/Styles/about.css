@@ -1,0 +1,92 @@
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: auto;
+    padding: 10px 20px;
+    flex-direction: column;
+    line-height: 30px;
+}
+.about .heading {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 20px;
+    width: 100vw;
+    margin-top: 10px;
+    border: 1px solid rgba(8, 204, 243, 0.592);
+    font-family: 'Times New Roman', Times, serif;
+    flex-wrap: wrap;
+
+    row-gap: 3px;
+
+}
+.about .heading h3, .about .heading  p {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(8, 204, 243, 0.592);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.about .why-choose-us{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 20px;
+
+    border: 1px solid rgb(255, 255, 255);
+   line-height: 35px;   
+   width: 100vw;
+   flex-wrap: wrap;
+
+}
+.about  .why-choose-us h3{
+    color: rgba(8, 204, 243, 0.592);
+font-family: 'Times New Roman', Times, serif;
+padding-left: 10px;
+border-radius: 5px;
+
+}
+.why-choose-us p{
+    color: rgba(8, 204, 243, 0.592);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 3px;
+   
+
+
+}
+.why-choose-us p strong{
+    color: rgba(8, 204, 243, 0.592);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border-bottom:2px solid white;
+}
+.about .book-your-adv{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    line-height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+
+    width: 100vw;
+    flex-wrap: wrap;
+
+}
+.book-your-adv h3{
+    color: rgba(8, 204, 243, 0.592);
+    padding: 5px 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(8, 204, 243, 0.592);
+}
+.book-your-adv p{
+  color: rgba(8, 204, 243, 0.592);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 20px;
+    margin-top: 5px;
+    border-radius: 5px;
+
+
+}

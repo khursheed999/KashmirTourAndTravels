@@ -1,0 +1,111 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 33px;
+    padding: 10px 15px;
+    flex-wrap: wrap;
+    margin: 10px 20px;
+    row-gap: 10px;
+
+}
+.contact .heading{
+
+        display: flex;
+        width: 100%;
+        padding-left:  40px;
+         align-items: flex-start;
+        flex-direction: column;
+        border: 1px solid #ddd;
+        background-color: white;
+        color: rgb(8, 204, 243);
+       line-height: 35px;
+       padding-top: 5px;
+       
+}
+.contact .heading h3,.contact .heading p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(8, 204, 243);
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.contact .heading p .icon{
+    color: rgb(8, 204, 243);
+}
+.contact .form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin:10px 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+.form-container .contact-form{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 7px rgba(14, 16, 14, 0.218);
+}
+.contact-form div {
+    width: 100%;
+    padding: 10px 20px;
+}
+.contact-form div input, textarea{
+    padding: 10px 10px;
+    width: 100%;
+    border: none;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.183);
+    border-radius: 5px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    overflow: hidden;
+    color: rgb(8, 204, 243);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+     
+
+}
+textarea{
+    height: 120px;
+}
+form div input::placeholder , textarea::placeholder{
+    color: rgb(8, 204, 243);
+}
+form div input:focus, textarea:focus,button:focus{
+    border: 1px solid hwb(190 0% 4%);
+    outline: none;
+    box-shadow: 0 0 5px rgba(8, 204, 243, 0.434);
+}
+.submit-button{
+    padding: 8px 40px;
+    color: #fff;
+    background-color: rgb(8, 204, 243);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 0 0 4px rgba(47, 51, 51, 0.647);
+    border-radius: 5px;
+    outline: none;
+}
+.submit-button:focus{
+    border: 1px solid white;
+    outline: none;
+
+}
+.submit-button:hover{
+    border: 1px solid rgb(8, 204, 243);
+    color: rgb(8, 204, 243);
+    background-color: white;
+    outline: none;
+}
+@media screen and (max-width:400px) {
+    .form-container form{
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
