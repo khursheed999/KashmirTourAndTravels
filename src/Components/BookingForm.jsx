@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 const BookingForm=()=>{
   const navigate=useNavigate();
   const form = useRef();
-  
+  //this component sends a mail to the app developer;
   const sendEmail = (e) => {
     e.preventDefault();
 
