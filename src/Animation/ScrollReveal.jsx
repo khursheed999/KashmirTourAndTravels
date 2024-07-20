@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 const ScrollReveal = ({ children }) => {
   const controls = useAnimation();
   const { ref, inView } = useInView(); // Use default options
-
+// this file is not required in this project;
   useEffect(() => {
     console.log('InView:', inView); // Debugging log
     if (inView) {
