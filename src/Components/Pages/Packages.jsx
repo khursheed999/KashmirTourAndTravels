@@ -6,14 +6,15 @@ import Container from '../UI/Container';
 import DetailedCard from "../UI/DetailedCard";
 import { FaArrowRightLong } from 'react-icons/fa6';
 import Button from "../UI/Button";
-import { useContext, useState, useMemo } from "react";
+import { useContext, useState, useMemo, } from "react";
 import { motion } from "framer-motion";
-
+import { useNavigate } from "react-router-dom";
+import ScrollToTop from "../../ScrollToTop";
 const Packages = () => {
   const [selectOption, setSelectedOption] = useState("*");
   const context = useContext(ContextStore) || {};
   const { cardId, setCardId } = context;
-
+  const navigate=useNavigate();
   const NorthKashmir = useMemo(() => data.filter(item =>
     item.district === 'Bandipora' ||
     item.district === 'Baramulla' ||
@@ -65,21 +66,26 @@ const Packages = () => {
       },
     },
   };
+  function handleClick(){
+    setCardId(null);
+    navigate('/Packages')
+  }
  
   return (
     <div className="packages" id="top">
+      <ScrollToTop/>
       {cardId ? (
         <div className="district-wise">
           <Container classname='heading'>
             <p className="path-indicator">
               <a href="/">Home</a>
               <FaArrowRightLong className="icon" />
-              <a href="/Packages">Packages</a>
+              <a onClick={handleClick}>Packages</a>
               <FaArrowRightLong className="icon" />
               {data[cardId - 1].district}
             </p>
           </Container>
-          <div className="heading">
+          <div className="heading" id="top-heading">
             <h2>{data[cardId - 1].district}</h2>
             <p>Exploring Time&gt;&gt;{data[cardId - 1].exploringTime} <br /></p>
           </div>

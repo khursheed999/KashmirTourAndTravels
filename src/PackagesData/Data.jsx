@@ -78,7 +78,7 @@ export const data=[
     district:"Srinagar",
     image:tulip,
     exploringTime:'04/05 Days',
-    visitingDestinations:'Dal Lake, Tulip Garden, Shalimar Bagh, Nishat Bagh Chashme Shahi Bagh, Hari ParBat Fort, HazratBal Shrine',
+    visitingDestinations:'Dal Lake, Tulip Garden, Shalimar Bagh, Nishat Bagh Chashme Shahi Bagh, ',
     places:[
        {
         id:1,

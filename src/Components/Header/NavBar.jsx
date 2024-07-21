@@ -25,18 +25,7 @@ const Navbar = () => {
                         <MdTravelExplore /> 
                     </span>
                    <motion.div className="text"
-                    initial={{opacity:0,
-                    }}
                   
-                    animate={{
-                        opacity:[0,.1,.3,0.6,0.8,0.9,1,1,1,.9,.8,.6,.3,.1,0],
-                        scale:[.7,0.8,0.9,1,1.1,1.15,1.1,1,.9,.8,.7],
-                    }}
-                    transition={{
-                        repeat:Infinity,
-                        duration:10,
-                        ease:"linear"
-                    }}
                    >
                    <h2>Kashmir</h2><br />
                    <h6>Tour & Travels</h6>

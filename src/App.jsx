@@ -8,14 +8,19 @@ import Packages from './Components/Pages/Packages';
 import Navbar from './Components/Header/NavBar';
 import Footer from './Components/Footer/Footer';
 import { Store } from './ContextStore/ContextStore';
+import ScrollToTop from './ScrollToTop';
 function App() {
  
 
   return <Router>
+
    <Store>
+
    <div className='app'>
      <Navbar/>
     <div>
+   <ScrollToTop/>
+
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/About' element={<About/>}/>

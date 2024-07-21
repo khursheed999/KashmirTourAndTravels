@@ -5,32 +5,36 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-const BookingForm=()=>{
-  const navigate=useNavigate();
+import { verticalFRmotion, horizantalFRMotion } from '../Animation/Framer-motion';
+
+const BookingForm = () => {
+  const navigate = useNavigate();
   const form = useRef();
-  //this component sends a mail to the app developer;
+  
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs .sendForm('service_3wj8atp', 'template_gd81ql8', form.current, {
-        publicKey: {key},
-      })
+    
+    emailjs.sendForm('service_3wj8atp', 'template_gd81ql8', form.current, key)
       .then(
         () => {
           console.log('SUCCESS!');
-          alert("Message Send Successfully!");
+          alert("Message sent successfully!");
           e.target.reset();
           navigate('/');
         },
         (error) => {
           console.log('FAILED...', error.text);
-        },
+        }
       );
   };
-return  <motion.form
-ref={form}
-onSubmit={sendEmail}
-className="Contact-form"
+  
+  return (
+    <motion.form
+    {...verticalFRmotion}
+      ref={form}
+      onSubmit={sendEmail}
+      className="Contact-form"
+      
 initial={{opacity:0,
   y:100,
 }}
@@ -42,71 +46,29 @@ transition={{
   ease:'linear',
 }}
 viewport={{once:true}}
->
-<motion.div
-initial={{opacity:0,
-  x:100,
-}}
-whileInView={{opacity:[0,.3,0.5,0.7,0.8,.9,1],
-  x:[200,150,100,50,25,12,6,3,2,1,0],
-}}
-transition={{
-  duration:4,
-  ease:'linear',
-}}
-viewport={{once:true}}
-
->
-  <input type="text" placeholder="Enter Name"  name="user_name" />
-</motion.div>
-<motion.div
-initial={{opacity:0,
-  x:100,
-}}
-whileInView={{opacity:[0,.3,0.5,0.7,0.8,.9,1],
-  x:[200,150,100,50,25,12,6,3,2,1,0],
-}}
-transition={{
-  duration:4,
-  ease:'linear',
-}}
-viewport={{once:true}}
->
-  <input type="email" placeholder="Email" name="user_email" />
-</motion.div>
-<motion.div
-initial={{opacity:0,
-  x:100,
-}}
-whileInView={{opacity:[0,.3,0.5,0.7,0.8,.9,1],
-  x:[200,150,100,50,25,12,6,3,2,1,0],
-}}
-transition={{
-  duration:4,
-  ease:'linear',
-}}
-viewport={{once:true}}
->
-  <textarea type="text" placeholder="Write message here!" name="message"/>
-</motion.div>
-<motion.div
-initial={{opacity:0,
-  x:100,
-}}
-whileInView={{opacity:[0,.3,0.5,0.7,0.8,.9,1],
-  x:[200,150,100,50,25,12,6,3,2,1,0],
-}}
-transition={{
-  duration:4,
-  ease:'linear',
-}}
-viewport={{once:true}}
->
-  <Button name="Book Now"
-  type="submit"
-  value="Send"
-  classname="submit-button" />
-</motion.div>
-</motion.form>
+    >
+      <motion.div
+      {...horizantalFRMotion}
+      >
+        <input type="text" placeholder="Enter Name" required name="user_name" />
+      </motion.div>
+      <motion.div
+      {...horizantalFRMotion}
+      >
+        <input type="email" placeholder="Email" required name="user_email" />
+      </motion.div>
+      <motion.div
+      {...horizantalFRMotion}
+      >
+        <textarea placeholder="Write message here!" required name="message" />
+      </motion.div>
+      <motion.div
+      {...horizantalFRMotion}
+      >
+        <Button name="Book Now" type="submit" value="Send" classname="submit-button" />
+      </motion.div>
+    </motion.form>
+  );
 }
+
 export default BookingForm;

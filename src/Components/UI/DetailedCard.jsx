@@ -37,6 +37,8 @@ const DetailedCard=({item})=>{
               duration:3,
               ease:'linear',
             }}
+      viewport={{once:true}}
+      
           
             src={item.image} alt={item.destination} />
         </div>
@@ -52,6 +54,7 @@ const DetailedCard=({item})=>{
           ease:'linear',
         }}
         
+      viewport={{once:true}}
        
         className='data-container '>
            <motion.div
@@ -65,6 +68,7 @@ const DetailedCard=({item})=>{
               duration:4,
               ease:'linear',
             }}
+      viewport={{once:true}}
          
            >
            <h1 >{item.destination}</h1>
@@ -81,6 +85,8 @@ const DetailedCard=({item})=>{
               duration:4,
               ease:'linear',
             }}
+      viewport={{once:true}}
+
             >{item.description}</motion.p>
         </motion.p>
      </motion.div>

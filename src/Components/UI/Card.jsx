@@ -6,13 +6,13 @@ import ContextStore from '../../ContextStore/ContextStore';
 import Button from './Button';
 import { motion,useTransform,useScroll } from 'framer-motion';
 const Card=({item})=>{
- const {cardId,setCardId}= useContext(ContextStore);
+ const {setCardId}= useContext(ContextStore);
 const navigate= useNavigate();
     const {district,image,exploringTime,visitingDestinations,id}=item;
     function handleClick(id){
       console.log(id);
       setCardId(id);
-      navigate('/Packages')
+      navigate('/Packages/#top-heading')
     }
     const itemVariants = {
         hidden: { opacity: 0, y: 100 },
@@ -79,6 +79,7 @@ const navigate= useNavigate();
       </motion.div>
       <Button 
       classname="button"
+      
       onclick={()=>{handleClick(id)}}
       name={<>more details
          <span className='icon'> <MdKeyboardArrowRight/></span>

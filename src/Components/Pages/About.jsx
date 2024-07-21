@@ -1,9 +1,12 @@
 import '../../Styles/about.css';
 import { motion } from 'framer-motion';
+import ScrollToTop from '../../ScrollToTop';
 const About=()=>{
   
     return <motion.div className="about"
     >
+      <ScrollToTop/>
+
     <motion.div
      initial={{opacity:0,
         y:100,

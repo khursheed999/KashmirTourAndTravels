@@ -9,8 +9,9 @@
     height: 300px;
     border: none;
     outline: none;
+    background-color: var(--primaryColor);
     border-radius: 10px;
-    box-shadow: 0px 0px 7px black;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.183);
     margin-bottom: 10px;
     border: 1px solid #ccc;
 
@@ -64,7 +65,7 @@ padding-bottom: 5px;
   margin-left: 30vw;
   z-index: 1000;
   border: 1px solid white;
-  background-color: rgba(8, 204, 243, 0.819);
+  background-color: var(--primaryColor);
   border-radius: 3px;
 }
 .imageslider1  img{

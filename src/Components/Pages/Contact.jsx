@@ -9,6 +9,9 @@ import emailjs from '@emailjs/browser';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { key } from '../../SecretFile';
+import ScrollToTop from '../../ScrollToTop';
+import { horizantalFRMotion,verticalFRmotion } from '../../Animation/Framer-motion';
+
 const Contact=()=>{
     const navigate=useNavigate();
     const form = useRef();
@@ -16,9 +19,7 @@ const Contact=()=>{
     const sendEmail = (e) => {
       e.preventDefault();
   
-      emailjs .sendForm('service_3wj8atp', 'template_gd81ql8', form.current, {
-          publicKey: {key},
-        })
+      emailjs.sendForm('service_3wj8atp', 'template_gd81ql8', form.current, key)
         .then(
           () => {
             console.log('SUCCESS!');
@@ -34,46 +35,16 @@ const Contact=()=>{
     
     return <motion.div className='contact'
  >
+      <ScrollToTop/>
+
 <motion.div
-initial={{opacity:0,
-  y:100,
-}}
-whileInView={{opacity:[0,.3,0.5,0.7,0.8,.9,1],
-  y:[200,150,100,50,25,12,6,3,2,1,0],
-}}
-transition={{
-  duration:4,
-  ease:'linear',
-}}
-viewport={{once:true}}
+{...verticalFRmotion}
 className='heading'>
 <motion.h3
-initial={{opacity:0,
-  x:100,
-}}
-whileInView={{opacity:[0,.3,0.5,0.7,0.8,.9,1],
-  x:[200,150,100,50,25,12,6,3,2,1,0],
-}}
-transition={{
-  duration:2,
-  ease:'linear',
-}}
-viewport={{once:true}}
+{...horizantalFRMotion}
 >Welcome to Kashmir Tour And Travels</motion.h3>
 <motion.p
-
-initial={{opacity:0,
-  y:100,
-}}
-whileInView={{opacity:[0,.3,0.5,0.7,0.8,.9,1],
-  y:[200,150,100,50,25,12,6,3,2,1,0],
-}}
-transition={{
-  duration:2,
-  ease:'linear',
-}}
-viewport={{once:true}}
-
+{...horizantalFRMotion}
 ><CiLocationOn className='icon'/> Check S K Bala Hajin, Bandipora <br />
  <IoCallOutline className='icon'/> +91-8494040457 <br />
 < CiMail className='icon'/> khursheedahmadrah29@gmail.com</motion.p>
@@ -112,7 +83,7 @@ transition={{
   ease:'linear',
 }}
 viewport={{once:true}}>
-  <input type="text" placeholder="Enter Name"  name="user_name" />
+  <input type="text" placeholder="Enter Name"  required name="user_name" />
 </motion.div>
 <motion.div
 initial={{opacity:0,
@@ -127,7 +98,7 @@ transition={{
 }}
 viewport={{once:true}}
 >
-  <input type="email" placeholder="Email" name="user_email" />
+  <input type="email" placeholder="Email" required name="user_email" />
 </motion.div>
 
 <motion.div
@@ -143,7 +114,7 @@ transition={{
 }}
 viewport={{once:true}}
 >
-  <textarea type="text" placeholder="Write message here!" name="message"/>
+  <textarea type="text" required placeholder="Write message here!" name="message"/>
 </motion.div>
 <motion.div
 initial={{opacity:0,
@@ -158,7 +129,7 @@ transition={{
 }}
 viewport={{once:true}}
 >
-  <Button name="Book Now"
+  <Button name="contact"
   type="submit"
   value="Send"
   classname="submit-button" />

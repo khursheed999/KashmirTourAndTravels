@@ -15,7 +15,7 @@ footer{
   line-height: 30px;
 }
 .footer-content .footer-section-about{
-  background-color: rgba(2, 205, 246, 0.474);
+  background-color:var(--primaryColor);
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -35,7 +35,7 @@ footer{
   font-family: 'Times New Roman', Times, serif;
 }
 .footer-content .footer-section-links{
-  background-color: rgba(2, 205, 246, 0.474);
+  background-color:var(--primaryColor);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -57,7 +57,7 @@ footer{
   font-size: 15px;
 }
 .footer-content .footer-section-contact{
-  background-color: rgba(2, 205, 246, 0.474);
+  background-color: var(--primaryColor);
   padding: 10px 20px;
   line-height: 35px;
   justify-content: flex-start;
@@ -67,7 +67,7 @@ footer{
   font-family: 'Times New Roman', Times, serif;
 }
 .customer-service{
-background-color: rgba(2, 205, 246, 0.474);
+background-color: var(--primaryColor);
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -122,8 +122,8 @@ padding: 10px 20px;
   .footer-bottom{
     text-align: center;
     padding: 10px 20px;
-    height: 120px;
-  background-color: rgba(2, 205, 246, 0.474);
+    height: 170px;
+  background-color: var(--primaryColor);
    
   }
    hr{

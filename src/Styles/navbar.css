@@ -9,13 +9,12 @@
   width: 100%;
   z-index: 1000;
   height: 50px;
-  /* display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; */
-  background-color: #fff; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.107); 
+
+  background-color: var(--ghostWhite) ;
+  box-shadow: 10px 10px  20px  rgba(0, 0, 0, 0.307); 
 
 }
+
  .navbar .nav-list{
   display: flex;
   align-items: center;
@@ -47,7 +46,7 @@ section .travel-icon-container{
 }
   section .travel-icon-container h2 h6{
   margin-top: 5px;
-  color: rgb(136, 210, 235);
+  color: var(--primaryColor);
 }
 
 @media screen and (max-width : 610px){
@@ -58,7 +57,7 @@ section .travel-icon-container{
     justify-content: space-between;
     padding-right: 20px;
     flex-direction: row;
-    background-color: rgba(8, 204, 243, 0.434);
+    background-color: var(--primaryColor);
 
 
   }
@@ -78,8 +77,7 @@ section .travel-icon-container{
     padding-left: 10px;
   }
   section .travel-icon-container .text h6, h2{
-    
-    color: rgb(136, 210, 235);
+  
     color: white;
   }
    section .travel-icon-container .icon, 
@@ -88,7 +86,7 @@ section .travel-icon-container{
     margin: 2px;
     font-weight: bold;
     border-radius: 2px;
-    color: #fff;
+    color: var(--ghostWhite);
     font-size: 30px;
    cursor: pointer;
   }
@@ -97,7 +95,7 @@ section .travel-icon-container{
     padding-right: 10px;
   }
   .nav-icon-container .icon:hover{
-    color: rgb(10, 108, 236);
+    color:var(--primaryColor);
   }
    .navbar .nav-list{
         opacity: 0;
@@ -112,7 +110,7 @@ section .travel-icon-container{
         margin-left: 30px;
         width: 70%;
         border-radius: 5px;
-        color:  rgba(8, 200, 238, 0.487);
+        color: var(--primaryColor);
         background-color: rgba(0, 0, 0, 0.222); 
         box-shadow: 0 4px 8px rgba(0, 0, 255, 0.7); 
          z-index: 2000;
@@ -132,9 +130,9 @@ section .travel-icon-container{
       margin-left: 30px;
       width: 60%;
       border-radius: 5px;
-      color:  rgba(8, 200, 238, 0.487);
-      background-color: #fff; 
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.605); 
+      color:  var(--primaryColor);
+      background-color: #b61919; 
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.605); 
        z-index: 1;
       transition: .3s ease-in-out;
       border: 1px solid groove;
@@ -149,7 +147,7 @@ section .travel-icon-container{
     right: 0rem;
     justify-content: flex-end;
    color: #fff;
-   background-color:rgba(8, 200, 238, 0.487);
+   background-color:var(--primaryColor);
    box-shadow: 10 10 20 rgba(0, 0, 0, 0.222);
     border-radius: 5px;
     font-weight: bolder;
@@ -159,14 +157,14 @@ section .travel-icon-container{
   }
  
   .nav-list-active .icon:hover{
-   color: blue;
+   color: var(--primaryColor);
   }
     .navbar .nav-list-active li{
         padding:  .5rem 0rem;
         margin: 0px 3px;
     }
     a:hover{
-      background-color: rgb(136, 210, 235);
+      background-color: var(--DarkSkyBlue);
       scale: 1.5;
     }
 }
@@ -180,7 +178,7 @@ outline: none;
 }
 a {
     font-weight: 500;
-   color:  rgba(8, 200, 238, 0.487);
+   color: var(--primaryColor);
     text-decoration: double;
     font-size: 18px;
     height: 100%;
@@ -201,15 +199,14 @@ a {
   }
   a.active{
     padding: 5px 12px;
-    background-color: rgb(136, 210, 235);
+    background-color: var(--primaryColor);
     border-radius: 3px;
     outline: none;
     border: none;
     font-weight: bold;
     font-size: 18px;
     color: white;
-    
-    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.4); 
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.507); 
   }
   
   @media screen and (max-width : 510px){
@@ -220,7 +217,7 @@ a {
       justify-content: space-between;
       padding-right: 30px;
       flex-direction: row;
-      background-color: rgba(8, 204, 243, 0.434);
+      background-color: var(--primaryColor);
   
   
     }
